@@ -1,24 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
+import {useState} from "react";
+import Timer from "./timerMain";
+import CreateNewWrkout from './newwrkout';
+import WrkoutConditions from './conditions';
+import ShowVictory from './completion';
 
 function App() {
+  const [showWorkout, setShowWorkout] = useState(false)
+  const [showVictory, setShowVictory] = useState(false)
+  const [repSeconds, setRepSeconds] = useState(30)
+  const [restSeconds, setRestSeconds] = useState(20)
+  const [counter, setCounter] = useState(1)
+  const addCounter = () => setCounter(counter + 1)
+  let subtractCounter = () => setCounter(counter - 1)
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <WrkoutConditions.Provider value={{
+        showWorkout,
+        setShowWorkout,
+        showVictory,
+        setShowVictory,
+        repSeconds,
+        restSeconds,
+        setRepSeconds,
+        setRestSeconds,
+        counter,
+        addCounter,
+        subtractCounter,
+      }}>
+      {showWorkout ? <CreateNewWrkout /> : showVictory? <ShowVictory/> : <Timer />}
+      </WrkoutConditions.Provider>
+    </main>
   );
 }
 

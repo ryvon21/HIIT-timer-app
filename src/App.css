@@ -1,38 +1,114 @@
-.App {
+body {
+  background: #2e4057;
+  color: whitesmoke;
+}
+
+main {
+  padding: 50px;
+  margin: 0 auto;
+  max-width: 300px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* button styles */
+button {
+  background-color:#586a89;
+  color: #545a63;
+  border: 0;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  margin: 10px;
+  display: inline-block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.wide-btn {
+  margin: 0 auto;
+  width: auto;
+  background-color:#586a89;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1.33rem;
+  line-height: 50px;
+  color: #FDFFF7;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.wide-btn img {
+  width: 50px;
+  float: left;
+  margin-right: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.count-container button {
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 25px;
+  display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.count-container button img {
+  display: block;
+  margin: auto;
+  width:fit-content;
+}
+
+.return-btn {
+  background: transparent;
+  margin: 0 auto;
+  margin-top: 25px;
+  width: 44px;
+}
+
+/* */
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+
+/* slider styles */
+.slider{
+  height: 30px;
+  border: 2px solid #b9272C;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.thumb{
+  background-color: #b9272C;
+  cursor: pointer;
+  width: 25px;
+  height: 28px;
+  margin-top: 1px;
+  border-radius: 6px;
+}
+
+.slider2{
+  height: 30px;
+  border: 2px solid #03B55C;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.thumb2{
+  background-color: #03B55C;
+  cursor: pointer;
+  width: 25px;
+  height: 28px;
+  margin-top: 1px;
+  border-radius: 6px;
+}
+
+/* */
+
+.count-container {
+  text-align: center;
+}
+
+.count-container p{
+  margin-top: 25px;
 }
