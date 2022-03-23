@@ -1,4 +1,5 @@
 import ReturnSVG from './assets/images/return.svg'
+import React, { Component }  from 'react';
 
 function ReturnBtn(props) {
     return (

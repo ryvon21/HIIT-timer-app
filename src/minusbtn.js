@@ -1,4 +1,5 @@
 import SubtractSVG from './assets/images/minus.svg'
+import React, { Component }  from 'react';
 
 function SubtractBtn(props) {
     return (

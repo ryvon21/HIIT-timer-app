@@ -1,4 +1,5 @@
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import React, { Component }  from 'react';
 import { useContext, useState, useEffect, useRef } from 'react';
 import 'react-circular-progressbar/dist/styles.css';
 import PauseBtn from './pausebtn';
@@ -83,8 +84,6 @@ function Timer () {
 
    
 
-    Howler.volume(1.0)
-
     return (
         
         <div>
@@ -99,8 +98,8 @@ function Timer () {
         })} />
 
         <div style={{marginTop:'25px'}}>
-            <PlayBtn  onClick={() => { setIsPaused(false); isPausedRef.current = false; }}/>
-            <PauseBtn onClick={() => { setIsPaused(true); isPausedRef.current = true; }}/>
+            <PlayBtn  onClick={() => { setPause(false); isPausedRef.current = false; }}/>
+            <PauseBtn onClick={() => { setPause(true); isPausedRef.current = true; }}/>
         </div>
 
         <div style={{marginTop:'25px'}}>

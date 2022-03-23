@@ -1,4 +1,5 @@
 import RunSVG from './assets/images/running.svg'
+import React, { Component }  from 'react';
 
 function NewExercise(props) {
     return (

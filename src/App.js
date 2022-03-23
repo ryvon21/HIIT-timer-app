@@ -1,4 +1,5 @@
 import './App.css';
+import React, { Component }  from 'react';
 import {useState} from "react";
 import Timer from "./timerMain";
 import CreateNewWrkout from './newwrkout';
