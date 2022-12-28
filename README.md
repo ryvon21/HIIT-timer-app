@@ -5,7 +5,7 @@ An application used to set interval timers for High Intensity Training, built wi
 # Project Status #
 0.5.0
 
-This project is currently in development. Users can create their own exercises using the 'rep' and 'rest' intervals as well as number of sets. Material UI will be implemented as well as sounds and feedback.
+Users can create their own exercises using the 'rep' and 'rest' intervals as well as number of sets.
 
 # Project Screen Shot(s) #
 
@@ -38,6 +38,4 @@ localhost:3000/
 
 
 
-This was a self directed project for my last semester of college;  used to demonstrate my knowledge of different front-end technologies and more specifically, React. To demonstrate my ability to understand and use hooks, props and states.
-
-The technologies implemented in this project are React, a significant amount of VanillaJS, JSX, and CSS. I chose to use the create-react-app boilerplate to minimize initial setup and invest more time in developing the actual application. 
+Self directed project from college, built to demonstrate knowledge of React. Other technologies used were Javascript, and a touch of CSS.
